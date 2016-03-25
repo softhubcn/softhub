@@ -1,6 +1,0 @@
-com\xxl\groovy\core\service\GlueHandler.class
-com\xxl\groovy\core\GlueFactory.class
-com\xxl\groovy\core\support\SpringSupport.class
-com\xxl\groovy\core\GlueLoader.class
-com\xxl\groovy\core\cache\ICache.class
-com\xxl\groovy\core\cache\LocalCache.class
