@@ -1,4 +1,4 @@
-package com.xxl.groovy.core.expr;
+package org.softhub.plugin.expr;
 
 import groovy.lang.Script;
 import java.lang.reflect.Method;

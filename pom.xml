@@ -4,15 +4,21 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.softhub</groupId>
-    <artifactId>softhub-saas</artifactId>
+    <artifactId>softhub-parent</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>softhub-plugin</module>
+        <module>softhub-web</module>
+        <module>softhub-orm</module>
+        <module>softhub-core</module>
     </modules>
 
     <properties>
         <spring.version>4.2.1.RELEASE</spring.version>
+        <slf4j.version>1.7.5</slf4j.version>
+        <groovy.version>2.4.5</groovy.version>
+        <jdk.version>1.6</jdk.version>
     </properties>
 
     <build>
@@ -22,8 +28,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.1</version>
                 <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
+                    <source>${jdk.version}</source>
+                    <target>${jdk.version}</target>
                     <encoding>UTF8</encoding>
                 </configuration>
             </plugin>

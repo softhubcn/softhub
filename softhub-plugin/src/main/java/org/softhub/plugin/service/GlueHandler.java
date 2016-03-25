@@ -1,11 +1,8 @@
-package com.xxl.groovy.core.service;
+package org.softhub.plugin.service;
 
 import java.util.Map;
 
-/**
- * default glue iface, it could be use in your biz service
- * @author xuxueli 2016-1-2 21:31:56
- */
+
 public interface GlueHandler {
 	
 	/**

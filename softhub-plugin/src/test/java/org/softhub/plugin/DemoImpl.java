@@ -1,4 +1,4 @@
-package com.xxl.groovy.core;
+package org.softhub.plugin;
 
 public class DemoImpl implements IDemo {
 	@Override

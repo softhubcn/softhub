@@ -1,4 +1,5 @@
-package com.xxl.groovy.core.cache;
+package org.softhub.plugin.cache;
+
 
 public interface ICache {
 	

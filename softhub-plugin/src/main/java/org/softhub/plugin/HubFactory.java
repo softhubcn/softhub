@@ -1,17 +1,15 @@
-package com.xxl.groovy.core;
+package org.softhub.plugin;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import com.xxl.groovy.core.cache.LocalCache;
-import com.xxl.groovy.core.service.GlueHandler;
-import com.xxl.groovy.core.support.SpringSupport;
-
+import org.softhub.plugin.cache.LocalCache;
+import org.softhub.plugin.service.GlueHandler;
+import org.softhub.plugin.support.SpringSupport;
 import groovy.lang.GroovyClassLoader;
 
 
-public class GlueFactory {
-	private static Logger logger = LoggerFactory.getLogger(GlueFactory.class);
+public class HubFactory {
+	private static Logger logger = LoggerFactory.getLogger(HubFactory.class);
 	
 	// groovy class loader
 	private GroovyClassLoader groovyClassLoader = new GroovyClassLoader();
@@ -23,9 +21,9 @@ public class GlueFactory {
 	}
 	
 	// code source loader
-	private GlueLoader glueLoader;
-	public void setGlueLoader(GlueLoader glueLoader) {
-		this.glueLoader = glueLoader;
+	private HubLoader hubLoader;
+	public void setHubLoader(HubLoader hubLoader) {
+		this.hubLoader = hubLoader;
 	}
 	
 	// spring support
@@ -57,7 +55,7 @@ public class GlueFactory {
 		if (cacheClass != null) {
 			return (Class<?>) cacheClass;
 		}
-		String codeSource = glueLoader.load(name);
+		String codeSource = hubLoader.load(name);
 		if (codeSource!=null && codeSource.trim().length()>0) {
 			Class<?> clazz = groovyClassLoader.parseClass(codeSource);
 			if (clazz!=null) {

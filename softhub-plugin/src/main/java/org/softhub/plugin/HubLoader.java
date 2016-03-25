@@ -1,10 +1,7 @@
-package com.xxl.groovy.core;
+package org.softhub.plugin;
 
-/**
- * code source loader
- * @author xuxueli 2016-1-2 20:01:39
- */
-public interface GlueLoader {
+
+public interface HubLoader {
 
 	/**
 	 * load code source by name, ensure every load is the latest.

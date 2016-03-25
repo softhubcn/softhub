@@ -1,4 +1,4 @@
-package com.xxl.groovy.core;
+package org.softhub.plugin;
 
 /**
  * Created by linkx on 2016/3/22.

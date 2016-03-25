@@ -1,9 +1,9 @@
-package com.xxl.groovy.core;
+package org.softhub.plugin;
 
-public class GlueFactoryTest {
+public class HubFactoryTest {
 	public static void main(String[] args) throws Exception {
-		GlueFactory glueFactory = new GlueFactory();
-		glueFactory.setGlueLoader(new GlueLoader() {
+		HubFactory hubFactory = new HubFactory();
+		hubFactory.setHubLoader(new HubLoader() {
 			@Override
 			public String load(String name) {
 				if ("j".equals(name)) {
@@ -45,7 +45,7 @@ public class GlueFactoryTest {
 		});
 		
 		@SuppressWarnings("unchecked")
-		Class<IDemo> clazz = (Class<IDemo>) glueFactory.loadClass("g");
+		Class<IDemo> clazz = (Class<IDemo>) hubFactory.loadClass("g");
 		
 		IDemo service = clazz.newInstance();
 		System.out.println(service);

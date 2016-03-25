@@ -1,4 +1,4 @@
-package com.xxl.groovy.core.cache;
+package org.softhub.plugin.cache;
 
 import java.util.concurrent.ConcurrentHashMap;
 

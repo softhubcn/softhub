@@ -1,4 +1,4 @@
-package com.xxl.groovy.core.support;
+package org.softhub.plugin.support;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
